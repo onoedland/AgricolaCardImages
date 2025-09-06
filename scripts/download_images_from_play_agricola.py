@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     df_local = df.with_columns(
         (
-            "../images/"
+            "../images/play_agricola/"
             + pl.col("image_url").str.strip_prefix("http://play-agricola.com/")
         ).alias("local_image_path")
     )
